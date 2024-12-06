@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    font-family: Helvetica;
+    font-size: 20px;
+    color: white;
+
+    background-image: url(https://genotipia.com/wp-content/uploads/2020/04/Netflix-Background-prueba-1.jpg) ;
+    position: relative;
+    
+   
+
+
+}
+
+
+
+.Fondo {
+   
+   width: 100%;
+   height: 100vh;
+    background: linear-gradient(45deg , rgba(0, 0, 0, 0.5) , rgba(0, 0, 0, 0.8));
+    position: absolute;
+    top: 0px;
+    
+
+}
+
+.Logo img {
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top: 30px;
+    left: 3%;
+}
+
+
+.langua select{
+    display: inline-block;
+    position: absolute;
+    top: 30px;
+    right: 10%;
+   background: rgba(0, 0, 0, 0.078);
+   color: white;
+   padding: 11px;
+   margin-right: 15px;
+   border-radius: 5px;
+    
+}
+
+nav .Singin {
+
+   
+    padding: 9px 19px;
+    background-color: red;
+    border-radius: 4px;
+    color: rgb(237, 237, 237);
+    position: absolute;
+    right: 3%;
+    top: 30px;
+    
+    
+
+}
+
+ .content-pag {
+ position: relative;
+ width: 100%;
+ height: 100vh;
+display: flex;
+
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+
+ }
+ .content-pag h1 {
+    font-size: 60px;
+    font-weight: 1000;
+    
+    
+ }
+
+ .content-pag div {
+    font-weight: 300;
+    margin-top: 20px;
+}
+ 
+.content-pag input {
+    font-weight: 900;
+    margin-top: 30px;
+    padding: 15px;
+}
+
+.input_zone {
+width: 500px;
+margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.input_zone > .Email {
+background: rgba(0, 0, 0, 0.537);
+
+border: 1px solid white;
+margin-right: 35px;
+}
+
+.input_zone > .GO {
+background-color: RED;
+color: white;
+border: NONE;
+
+}
+
+
+ @media screen (max-width:500px) {
+    
+ }

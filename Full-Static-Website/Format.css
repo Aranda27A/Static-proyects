@@ -1,0 +1,806 @@
+
+
+
+body {
+margin: 0PX;
+background-color:rgb(49, 47, 47) ;
+color: antiquewhite;
+/* OCultar la barra de scroll */
+overflow-x: hidden; 
+box-sizing: border-box;
+
+}
+
+
+/* ------------NAV-*--------- */
+
+ .nav {
+
+	background-color: rgb(232, 122, 20);
+	filter: drop-shadow(1px 1px 5px #130a0a);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 	1 1 0px;
+	padding: 5px;
+ }
+
+
+
+.nav__div-A1 {
+                                                            
+margin: 10px 30px;
+padding: 5px;
+text-decoration: none;
+font-size: 1.3rem;
+font-family: serif;
+color: white;
+transition: 0.35s;
+
+
+
+}
+
+.nav__div-A1:hover { 
+
+	
+border-bottom: 1px solid rgb(246, 43, 7);
+transform: scale(1.1)
+
+
+/* INCIIPO---------------- */
+
+}
+
+.contenedor_img {
+	
+
+	min-height: 450px;
+	max-width: 100%;
+
+	background-image: url(img/03e66c0aaa167eef4462513cb20f5933ffae8c39.webp);
+
+	background-size: cover;
+	background-position: 80%;
+	background-attachment: fixed;
+
+}
+
+
+.texto_index {
+display: flex;
+flex-direction: column;
+max-width: 100%;
+margin: 0 250px;
+min-height: 50px;
+margin-bottom: 100px;
+text-align:justify;
+cursor:cell;
+
+}
+
+
+.texto_index .Azl {
+
+	font-family:  Georgia, 'Times New Roman', Times, serif;
+	text-align: center;
+	font-size: 25px;
+	border-bottom: 3px solid rgb(235, 230, 178);
+	padding-bottom: 15px;
+	margin: 70px 200px;
+}
+
+
+
+
+
+
+
+.texto_index .Titulo_movil {
+	
+	position: relative;
+	width: 100%;
+	text-align:  center;
+	font-size: 2rem;
+	text-shadow: 0px 40px ;
+}
+	
+	.texto_index .Titulo_movil h3 {
+		position: relative;
+		display: inline-block;
+	animation-name: A;
+	right: 0;
+	animation-duration: 3s;
+	animation-timing-function: ease;
+	animation-fill-mode: forwards;
+
+	align-self: center;
+	
+	}
+
+@keyframes A{ 
+	0% {
+		font-size: 25;
+			right: 700px;
+			filter: blur(5px)
+
+	}
+
+	100% {
+		font-size: 3rem;
+		right: 0 ;
+		text-shadow: none;
+		
+
+	}	
+
+}
+
+/*----------------------RESPONSIVE NAV-------------------- */
+
+@media   (max-width:800px) {
+	.nav {
+		display: flex;
+		height: 55px;
+		
+
+
+		background-color: rgb(232, 122, 20);
+		justify-content: center;
+		align-items: center;
+		flex: 	1 1 0px;
+		filter: drop-shadow(1px 1px 5px #130a0a);
+	
+	 }
+	
+	
+	
+	.nav__div-A1 {
+																
+	margin: 10px 5px;
+	padding: 5px;
+	text-decoration: none;
+	font-size: 1rem;
+	font-family: serif;
+	color: white;
+	transition: 0.35s;
+	text-align:center	;
+	border-radius: 5px;
+	
+	
+	}
+	
+	
+
+}
+
+
+
+
+/* RESPONSIVE INICIO------------------------------------- */
+
+@media  (max-width:600px){
+	
+	
+
+	
+	
+	.texto_index {
+	display: flex;
+	flex-direction: column;
+	margin: 0 5px;
+	margin-bottom: 100px;
+	text-align:justify;
+	cursor:cell;
+	
+	}
+
+
+
+
+	
+	
+	.texto_index .Azl {
+	
+		font-family:  Georgia, 'Times New Roman', Times, serif;
+		text-align: center;
+		font-size: 25px;
+		margin: 0;
+		border-bottom: 3px solid rgb(235, 230, 178);
+		padding-bottom: 5px;
+	}
+	
+	
+	
+	
+	
+	
+	
+	.texto_index .Titulo_movil {
+		
+		position: relative;
+		width: 100%;
+		text-align:  center;
+		font-size: 2rem;
+		text-shadow: 0px 40px ;
+	}
+		
+		.texto_index .Titulo_movil h3 {
+			position: relative;
+			display: inline-block;
+		animation-name: A;
+		right: 0;
+		animation-duration: 3s;
+		animation-timing-function: ease;
+		animation-fill-mode: forwards;
+	
+		align-self: center;
+		
+		}
+
+
+		.contenedor_img {
+
+			min-height: 375px;
+			min-height: 150px;
+			background-attachment: local;
+
+		}
+
+	}
+
+
+
+
+
+
+/* ------PAGINA VIDEOS ---------------------------------- */
+
+
+
+
+.contenedor_videos {
+ position: relative;
+	
+
+}
+
+.intro_videos  {
+
+	display: inline-block;
+	margin: auto;
+	text-align: center;
+	font-size: 25px;
+
+
+
+}
+
+.intro_videos .A  {
+
+	font-size: 30px;
+	filter: drop-shadow(3px 5px 10px #992);
+}
+ 
+.intro_videos .b{
+
+	font-size: 20px;
+	margin: 0 50px;
+	
+}
+ 
+
+
+
+
+
+.lives {
+
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+grid-template-rows: 250px;
+grid-auto-rows: 250px;
+	align-items: center;
+	justify-items: center;
+	gap: 25px;
+	padding: 40px;
+	border-radius: 30px;
+	margin: 100px 20px;
+	background: linear-gradient(to top, rgb(227, 85, 19) ,#320808);
+
+transition: all .75s;
+
+
+}
+
+
+.lives:hover {
+	transform: scale(1.005);
+	filter: drop-shadow(0px 10px 20px #423a3a);
+}
+
+
+
+
+.video1 {
+position: relative;
+width: 100%;
+height:100%;
+
+}
+
+
+
+
+
+.video1 iframe {
+
+border-radius: 15px;
+	width:100%;
+	height: 100%;
+}
+
+
+.text_medio_videos{
+
+		font-size: 40px;
+		font-family: fantasy;
+		transition: all .5s;
+}
+
+.lives:hover >.text_medio_videos {
+
+	transform: scale(3	);
+	filter: drop-shadow(3px 3px 2px #999);
+	
+	
+}
+
+
+ 
+ 
+
+
+ 
+.videos_musicales{
+
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	grid-template-rows: 250px;
+	grid-auto-rows: 250px;
+	align-items: center;
+	justify-items: center;
+	gap: 25px;
+	padding: 30px;
+	border-radius: 30px;
+	margin: 100px 20px;
+
+
+	background: linear-gradient(to top, rgb(232, 86, 19) ,#440b0b);
+
+transition: all .75s;
+}
+
+
+.videos_musicales:hover {
+
+	transform: scale(1.005);
+	filter: drop-shadow(0px 10px 20px #423a3a);
+	
+}
+
+.videos_musicales:hover >.text_medio_videos {
+
+	transform: scale(3	);
+	filter: drop-shadow(3px 3px 3px #999);
+	
+	
+}
+
+
+
+
+.video2 {
+	position: relative;
+	width: 100%;
+	height:100%;
+	
+	}
+	
+
+
+	.video2 iframe {
+	
+	
+		width:100%;
+		height: 100%;
+		border-radius: 15px;
+	}
+	
+
+
+/* RESPONISVE VIDEOS------------ */
+
+
+
+
+@media (max-width:600px){
+
+	.text_medio_videos{
+
+		font-size: 20px;
+		font-family: fantasy;
+		transition: all .5s;
+}
+
+	
+}
+
+
+
+
+
+/* PAGINA MAS INFO AQUI ------------------------------ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fondo_info {
+	background-image: url(https://pics.filmaffinity.com/The_Blaze_Territory_Vaideo_musical-863809961-large.jpg); 
+background-repeat: no-repeat;
+background-size: cover;
+background-position: 50%;
+
+display: flex;
+align-items: center;
+justify-content: center;
+}
+	
+	
+
+
+
+ .Contenedor_Info {
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+max-width: 800px;
+max-height: 700px;
+padding: 4rem 3rem;
+backdrop-filter: blur(10PX);
+border: 2PX solid #F99;
+border-radius: 25px;
+margin: 10px;
+
+
+
+
+filter:  drop-shadow( 1px 4px 4px 4px rgb(86, 86, 23));
+filter: drop-shadow(3px 2px 10px #191616);
+
+
+ }
+
+
+ .Contenedor_Info h3 {
+
+	text-align: center;
+	margin-bottom: 20px;
+	transition: all 1;
+
+ }
+ .Contenedor_Info:hover > h3 {
+
+background-color: #0000004f;
+border-radius: 20px;
+padding: 10px;
+
+ }
+
+ .Contenedor_Info 	.inputs input,select, textarea  {
+
+	border: none;
+	outline: none;
+	color: #f41 	 ;
+margin: 20px ;
+	border-bottom: 1PX solid white;
+	background: transparent;
+
+ }
+
+ input:hover {
+
+	border-bottom: 3PX groove #FE3;
+	border: none;
+	background-color: transparent;
+
+
+ }
+
+button {
+
+	border: none;
+	padding: 10px;
+	background-color: #f41;
+	margin: 0 17rem;
+	color: white;
+	font-weight: 900;
+	filter: drop-shadow(2PX 1PX 5PX #ADD);
+
+
+
+}
+
+
+button:hover{
+
+
+filter: drop-shadow(2PX 1PX 8PX rgb(73, 148, 148));
+
+
+
+
+}
+
+button:active{
+
+	filter: drop-shadow(2PX 1PX 10PX rgb(3, 214, 214));
+	transform: scale(.9);
+
+
+}
+.inputs DIV {
+	display: inline-block;
+
+}
+
+
+
+@media  (max-width:800px) {
+
+	.Contenedor_Info {
+		width: 400px;
+
+	
+}
+
+
+}
+ /* GALERIA ------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ .contenedor_boximg {
+
+display: grid;
+
+padding: 50px;
+border: 2px solid rgba(255, 153, 153, 0.483) ;
+border-radius: 15px;
+margin: 30px 50px;
+background: linear-gradient(45deg, rgb(234, 7, 26) , #000000);
+filter: drop-shadow(2px 5px 6px #f41);
+grid-template-columns: repeat(auto-fill, minmax(250px,1fr) );
+grid-template-rows: repeat(auto-fill, 1fr);
+
+
+
+
+
+gap: 100PX;
+
+
+
+}
+
+
+
+
+ .boximg {
+
+	width: 100%;
+	height:100%;
+	
+
+ }
+
+ .boximg img {
+border-radius: 20px;
+	width: 100%;
+	height:100%;
+	object-fit:cover;
+
+ }
+
+
+
+
+
+
+
+	
+
+ @media (max-width:700px){
+	.contenedor_boximg {
+
+		grid-template-columns: repeat(auto-fill,minmax(100px,1fr) );
+
+	}
+
+	
+}
+ 
+
+/* FOOTER */
+
+ .contenedor_footer {
+
+
+position: relative;
+bottom: 0px;
+
+	border-top: 1px solid  rgb(92, 78, 43);
+	filter: drop-shadow(3px 4px 5px #aaa);
+
+	width: 100%;
+	height: 50px;
+	background-color: rgb(81, 93, 104);
+font-size: 5px;
+
+}
+
+.footerIcons {
+	
+	display: flex;
+	width: 100%;
+flex-direction: row;
+justify-content: center;
+
+
+}
+ .iconf {
+	
+	margin: 10px 20px ;
+	
+ }
+
+.text_final {
+	display: block;
+	text-align: center;
+	font-size: 15px;
+}
+ 
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+*{
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform:  capitalize;
+    transition: .2s linear;
+    background-color: inherit;
+   
+}
+
+
+.Contenedor_Albums {
+   background:linear-gradient( 45deg , rgb(235, 134, 1), rgb(0, 0, 0));
+   padding:26px 9%;
+
+
+}
+
+.Contenedor_Albums .title {
+
+   font-size:  50px;
+   text-align: center;
+   padding-bottom: 20px;
+   color: rgb(201, 143, 5);
+   text-shadow: 0 5px 10px rgb(0,0,0,.2);
+
+
+  
+
+}
+
+.Contenedor_Albums  .box-container {
+    display:grid;
+grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)) ;
+grid-gap: 25px;
+justify-content: center;
+justify-items: center;
+
+
+}
+
+.box {
+    box-shadow: 0 6px 10px rgb(0,0,0,.2);
+    border-radius: 7px;
+    background-color: rgb(181, 172, 160) ;
+    padding: 10px 30px;
+    text-align: center;
+
+   
+}
+
+.box img {
+
+   width: 200px;
+   height: 200px;
+}
+
+.box h3 {
+font-size: 20px;
+ color: #f0a000;
+ padding: 10px 0;
+
+}
+
+.box p {
+    font-size: 15px;
+    padding-bottom: 10px;
+
+}
+
+.box .btn {
+    margin: 10px 0;
+    display: inline-block;
+    background: #df5a25;
+    color: black;
+    font-size: 20px;
+    padding: 10px 15px ;
+border-radius: 5px; 
+}
+
+.box .btn:hover {
+    padding: 10px 25px;
+}
+
+.box:hover {
+box-shadow: 0 10px 15px rgba(0,0,0, rgb(0,0,0,.5));
+transform: scale(1.08);
+}
+
+@media (max-width: 768px) {
+    .Contenedor_Albums{
+padding: 20px;
+
+    }
+}

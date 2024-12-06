@@ -1,0 +1,86 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+
+}
+
+
+
+body {
+margin: 0;
+background-color: rgb(43, 43, 44);
+}
+
+.pagina {
+    
+}
+
+.sidebar {
+background-color: black;
+margin: 0;
+position:fixed;
+left: 0;
+top: 0;
+bottom: 0;
+width: 150px;
+height: 100vh;
+padding: 25px;
+
+
+}
+
+
+.sidebar img {
+width: 150px;
+ object-fit: contain;
+    
+}
+
+
+.contenedor_elementos ul {
+
+list-style: none;
+margin:5px;
+
+}
+
+.contenedor_elementos ul li {
+
+    padding: 10px;
+    list-style: square;
+}
+
+.contenedor_elementos ul li a {
+    text-decoration: none;
+color: wheat;
+
+}
+
+
+.contenedor-playlist {
+ display: flex;
+ flex-direction: row;
+ height: 250px;
+ background: linear-gradient(43deg , #444 , #12a);
+
+
+
+}
+
+.imagen_playlist {
+    position: relative;
+    left: 230px;
+    top: 30px;
+
+    
+}
+
+
+.imagen_playlist img {
+
+width: 300px;
+height: 300px;
+object-fit: contain;
+
+}
+
