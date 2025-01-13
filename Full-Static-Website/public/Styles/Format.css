@@ -15,14 +15,18 @@ box-sizing: border-box;
 /* ------------NAV-*--------- */
 
  .nav {
-
-	background-color: rgb(232, 122, 20);
-	filter: drop-shadow(1px 1px 5px #130a0a);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex: 	1 1 0px;
-	padding: 5px;
+	box-sizing: border-box;
+    background-color: rgb(232, 122, 20);
+    filter: drop-shadow(1px 1px 5px #130a0a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 0px;
+    padding: 5px;
+    position: fixed; /* Hace que el nav quede fijo */
+    top: 0; /* Posiciona el nav en la parte superior */
+    width: 100%; /* Asegura que el nav ocupe todo el ancho de la pantalla */
+    z-index: 1000; /* Asegura que el nav esté por encima de otros elementos */
  }
 
 
@@ -45,20 +49,23 @@ transition: 0.35s;
 
 	
 border-bottom: 1px solid rgb(246, 43, 7);
-transform: scale(1.1)
-
-
-/* INCIIPO---------------- */
+transform: scale(1.1);
+transform-origin: center; /* Asegura que la transformación ocurra desde el centro */
+box-sizing: border-box; /* Asegura que el borde no afecte el tamaño del elemento */
 
 }
+
+
+
+/* INCIO---------------- */
 
 .contenedor_img {
 	
 
-	min-height: 450px;
+	min-height: 550px;
 	max-width: 100%;
 
-	background-image: url(img/03e66c0aaa167eef4462513cb20f5933ffae8c39.webp);
+	background-image: url(../img/03e66c0aaa167eef4462513cb20f5933ffae8c39.webp);
 
 	background-size: cover;
 	background-position: 80%;
